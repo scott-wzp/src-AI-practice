@@ -1,0 +1,59 @@
+随机森林模型验证结果
+==================================================
+
+1. 各数据集准确率
+训练集准确率: 0.9750
+验证集准确率: 0.9100
+测试集准确率: 0.9250
+
+2. 交叉验证结果
+5折交叉验证准确率: 0.9200 (+/- 0.0335)
+
+3. 测试集性能
+混淆矩阵:
+[[ 36   8]
+ [  7 149]]
+
+分类报告:
+              precision    recall  f1-score   support
+
+           0       0.84      0.82      0.83        44
+           1       0.95      0.96      0.95       156
+
+    accuracy                           0.93       200
+   macro avg       0.89      0.89      0.89       200
+weighted avg       0.92      0.93      0.92       200
+
+4. ROC曲线 AUC值
+AUC = 0.9674
+
+5. 特征重要性
+                     feature  importance
+                         age    0.299226
+              income_level_低    0.134076
+           marital_status_已婚    0.124817
+              premium_amount    0.080407
+              family_members    0.068807
+           marital_status_离异    0.039564
+              income_level_高    0.026545
+                    gender_男    0.024123
+          education_level_高中    0.021524
+             claim_history_是    0.020993
+              occupation_设计师    0.019370
+          education_level_硕士    0.015780
+             policy_term_20年    0.013215
+               occupation_经理    0.011708
+       policy_type_平安福满分2021    0.010805
+             policy_type_平安福    0.010509
+          education_level_本科    0.009245
+        policy_type_御享福（纯重疾）    0.008989
+              policy_term_5年    0.008983
+     policy_type_御享福（含轻症、中症）    0.007885
+               occupation_律师    0.007772
+               occupation_销售    0.007584
+              occupation_工程师    0.007022
+           policy_type_平安六福保    0.006105
+policy_type_平安盛世金越（2023）终身寿险    0.005270
+          policy_type_盛世福尊悦版    0.004941
+          policy_type_盛世福优悦版    0.003454
+              policy_term_1年    0.001281
